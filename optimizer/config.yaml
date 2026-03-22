@@ -1,0 +1,55 @@
+# Jordi Visser Portfolio Optimizer — Configuration
+# Tune these values without touching the Python code
+
+portfolio:
+  risk_free_rate: 0.045        # Current T-bill rate
+  max_single_position: 0.20   # No single holding > 20%
+  min_single_position: 0.01   # Always maintain minimum exposure
+
+# Sector allocation bounds (Jordi thesis constraints)
+sector_bounds:
+  "AI Infrastructure":
+    min: 0.30
+    max: 0.55
+    rationale: "Core long-term thesis — AI capex supercycle"
+  "Power & Grid":
+    min: 0.08
+    max: 0.20
+    rationale: "AI energy demand — nuclear baseload critical"
+  "Energy / Oil":
+    min: 0.12
+    max: 0.25
+    rationale: "Primary inflation re-acceleration hedge"
+  "Commodities":
+    min: 0.06
+    max: 0.14
+    rationale: "Fertilizer disruption catalyst — asymmetric payoff"
+  "Crypto":
+    min: 0.00
+    max: 0.08
+    rationale: "Small non-correlated debasement hedge only"
+
+# Jordi thesis preset weights (must sum to 1.0)
+jordi_preset:
+  NVDA:  0.125
+  MU:    0.062
+  AMAT:  0.050
+  VRT:   0.100
+  SMH:   0.100
+  DTCR:  0.062
+  CEG:   0.100
+  VST:   0.062
+  XLE:   0.087
+  XOM:   0.062
+  COP:   0.062
+  CF:    0.075
+  MOS:   0.062
+  IBIT:  0.037
+
+# Risk targets
+risk_targets:
+  target_sharpe: 1.0          # Minimum acceptable Sharpe ratio
+  max_volatility: 0.40        # Max annualized portfolio vol
+  target_beta_min: 0.85       # Jordi warns of market weakness — keep beta moderate
+  target_beta_max: 1.25
+  max_drawdown_warning: 0.25  # Flag if estimated max drawdown exceeds 25%
