@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "description": "Jordi Visser macro thesis asset universe",
+    "as_of": "2026-03-22",
+    "risk_free_rate": 0.045,
+    "note": "Returns and volatility are annualized estimates based on analyst consensus"
+  },
+  "assets": [
+    {"ticker":"NVDA",  "name":"NVIDIA Corporation",            "sector":"AI Infrastructure","type":"Stock","expected_return":0.28,"volatility":0.52,"beta":1.65,"thesis_role":"Core GPU compute — AI training and inference backbone"},
+    {"ticker":"MU",    "name":"Micron Technology",             "sector":"AI Infrastructure","type":"Stock","expected_return":0.22,"volatility":0.48,"beta":1.55,"thesis_role":"HBM memory — critical AI chip supply chain"},
+    {"ticker":"AMAT",  "name":"Applied Materials",             "sector":"AI Infrastructure","type":"Stock","expected_return":0.18,"volatility":0.38,"beta":1.40,"thesis_role":"Semiconductor equipment — picks and shovels"},
+    {"ticker":"VRT",   "name":"Vertiv Holdings",               "sector":"AI Infrastructure","type":"Stock","expected_return":0.25,"volatility":0.55,"beta":1.70,"thesis_role":"Data center power and cooling infrastructure"},
+    {"ticker":"SMH",   "name":"VanEck Semiconductor ETF",      "sector":"AI Infrastructure","type":"ETF",  "expected_return":0.20,"volatility":0.38,"beta":1.40,"thesis_role":"Diversified semi exposure — reduces single-name risk"},
+    {"ticker":"DTCR",  "name":"Global X Data Center ETF",      "sector":"AI Infrastructure","type":"ETF",  "expected_return":0.16,"volatility":0.28,"beta":0.95,"thesis_role":"Pure-play data center REITs — lower vol AI infra"},
+    {"ticker":"CEG",   "name":"Constellation Energy",          "sector":"Power & Grid",     "type":"Stock","expected_return":0.18,"volatility":0.32,"beta":0.85,"thesis_role":"Largest US nuclear fleet — AI data center baseload"},
+    {"ticker":"VST",   "name":"Vistra Energy",                 "sector":"Power & Grid",     "type":"Stock","expected_return":0.20,"volatility":0.38,"beta":0.90,"thesis_role":"Power generation — AI energy demand beneficiary"},
+    {"ticker":"XLE",   "name":"Energy Select Sector SPDR ETF", "sector":"Energy / Oil",     "type":"ETF",  "expected_return":0.12,"volatility":0.22,"beta":0.82,"thesis_role":"Broad energy hedge — WTI near $98, diesel surging"},
+    {"ticker":"XOM",   "name":"ExxonMobil",                    "sector":"Energy / Oil",     "type":"Stock","expected_return":0.10,"volatility":0.20,"beta":0.78,"thesis_role":"Integrated supermajor — dividend income + inflation hedge"},
+    {"ticker":"COP",   "name":"ConocoPhillips",                "sector":"Energy / Oil",     "type":"Stock","expected_return":0.14,"volatility":0.25,"beta":0.88,"thesis_role":"Low-cost E&P — best oil upside, strong balance sheet"},
+    {"ticker":"CF",    "name":"CF Industries",                 "sector":"Commodities",      "type":"Stock","expected_return":0.16,"volatility":0.30,"beta":0.70,"thesis_role":"Nitrogen fertilizer — Hormuz/supply disruption catalyst"},
+    {"ticker":"MOS",   "name":"Mosaic Company",                "sector":"Commodities",      "type":"Stock","expected_return":0.15,"volatility":0.32,"beta":0.72,"thesis_role":"Potash/phosphate — fertilizer disruption at planting"},
+    {"ticker":"IBIT",  "name":"iShares Bitcoin Trust",         "sector":"Crypto",           "type":"ETF",  "expected_return":0.35,"volatility":0.72,"beta":0.30,"thesis_role":"Non-correlated debasement hedge — keep under 5-8%"}
+  ]
+}
